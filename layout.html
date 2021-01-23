@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조랭퐁 페이지 따라 만들기</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        header{
+            height:220px;
+            /* border: solid 1px red; */
+        }
+        #top{
+            height: 60px;
+            background: #eae1d8;
+        }
+        section{
+            height: 400px;
+            border: solid 1px red;
+        }
+        #content_box{
+            /* 포토샵으로 작성하는게 아니라서 일단 width는 줄인다 */
+            /* width:1320px; */
+            /* 뭐때문인지 몰라도 html 전체 width 사이즈가 지정 px 보다 작은 상태  */
+            width: 1320px;
+            height:300px;
+            margin: 0 auto;
+            border: solid 1px blue;
+        }
+        footer{
+            height: 300px;
+            border: solid 1px yellow; 
+        }
+        .box{
+            width: 1320px;
+            margin: 0 auto;
+            /* border: solid 1px red; */
+        }
+        #top_logo img{
+            width: 50px;
+            margin: 3px 0 0 5px;
+            border-radius: 100px;
+        }
+        #top_logo {
+            float: left;
+        }
+        #top__ad {
+            float: left;
+            margin: 17px;
+            font-size: 16px;
+        }
+        #search{
+            float: right;
+            width: 233px;
+            height: 54px;
+        }
+        #search input{
+            margin: 14px 0 0 25px;
+            border: 0;
+            border-radius: 30px;
+            width: 200px;
+            height: 30px;
+        }
+        .bt1,.bt2{
+            text-decoration: none;
+            border: solid 1px lightgray;
+            padding: 5px 35px;
+            color: grey;
+        }
+        #logo_img{
+            margin: 30px 0 0 330px;;
+            float:left;
+        }
+        #btn{
+            margin: 65px 0 0 20px;
+            float:left;
+        }
+        #main_menu {
+            border-top: solid 1px #dddddd;
+            border-bottom: solid 1px #dddddd;
+            padding:25px 20px;
+        }
+        #main_menu li {
+            display: inline;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div class="box">
+                <div id="top_logo">
+                    <img src="./img/mini_logo.jpg">
+                </div>
+                <div id="top__ad"> <!-- 왜 top_ad로 하면 사라질까? -->
+                    소중한개 편안하개, 조랭퐁 입니다 | 스토어찜 208
+                </div>
+                <div id="search">
+                    <input type="text" placeholder="     검색어를 입력해보세요">
+                    <!-- 이미지 파일이 없는 관계로 강제로 텍스트창 크기를 늘림 실제론 백그라운드 이미지 -->
+                </div>
+            </div> <!--box-->
+
+
+        </div> <!-- top -->
+        <div id="logo">
+            <div class="box">
+                <div id="btn">
+                    <a href="#" class="bt1">찜한스토어</a>
+                    <a href="#" class="bt2">소식받는중</a>
+                </div>
+                <div id="logo_img">
+                    <img src="./img/main_logo.jfif" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav id="main_menu">
+            <div class="box">
+                <ul>
+                    <li>전체상품</li>
+                    <li>묻고 답하기</li>
+                    <li>공지사항</li>
+                    <li>리뷰이벤트</li>
+                    <li>쇼핑스토리</li>
+                    <li>판매자 정보</li>
+                </ul>
+            </div>
+    </nav>
+    <section>
+        <div id="content_box">
+            상품목록
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
