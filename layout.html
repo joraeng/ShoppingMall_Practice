@@ -9,6 +9,10 @@
             margin: 0;
             padding: 0;
         }
+        a{
+            text-decoration: none;
+            color:black;
+        }
         li{
             list-style: none;
         }
@@ -25,9 +29,6 @@
             border: solid 1px red;
         }
         #content_box{
-            /* 포토샵으로 작성하는게 아니라서 일단 width는 줄인다 */
-            /* width:1320px; */
-            /* 뭐때문인지 몰라도 html 전체 width 사이즈가 지정 px 보다 작은 상태  */
             width: 1320px;
             height:300px;
             margin: 0 auto;
@@ -53,6 +54,7 @@
         #top__ad {
             float: left;
             margin: 17px;
+            margin-top: 20px;
             font-size: 16px;
         }
         #search{
@@ -74,11 +76,11 @@
             color: grey;
         }
         #logo_img{
-            margin: 30px 0 0 330px;;
+            margin: 30px 0 0 235px;;
             float:left;
         }
         #btn{
-            margin: 65px 0 0 20px;
+            margin: 70px 0 0 20px;
             float:left;
         }
         #main_menu {
@@ -118,7 +120,7 @@
                     <a href="#" class="bt2">소식받는중</a>
                 </div>
                 <div id="logo_img">
-                    <img src="./img/main_logo.jfif" alt="">
+                    <a href="#"><img src="./img/main_logo.jfif" alt=""></a>
                 </div>
             </div>
         </div>
@@ -126,12 +128,12 @@
     <nav id="main_menu">
             <div class="box">
                 <ul>
-                    <li>전체상품</li>
-                    <li>묻고 답하기</li>
-                    <li>공지사항</li>
-                    <li>리뷰이벤트</li>
-                    <li>쇼핑스토리</li>
-                    <li>판매자 정보</li>
+                    <a href="#"><li>전체상품</li></a>
+                    <a href="#"><li style="color:grey;">묻고 답하기</li></a>
+                    <a href="#"><li style="color:grey;">공지사항</li></a>
+                    <a href="#"><li style="color:grey;">리뷰이벤트</li></a>
+                    <a href="#"><li style="color:grey;">쇼핑스토리</li></a>
+                    <a href="#"><li style="color:grey;">판매자 정보</li></a>
                 </ul>
             </div>
     </nav>
